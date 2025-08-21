@@ -10,3 +10,28 @@ Files
 - train.csv - the training dataset; Listening_Time_minutes is the target
 - test.csv - the test dataset; your objective is to predict the Listening_Time_minutes for each row
 - sample_submission.csv - a sample submission file in the correct format.
+
+# Podcast Listening Time Prediction Using XGBoost
+This notebook focuses on modeling and predicting the duration listeners spend on podcast episodes. The Kaggle competition challenges participants to accurately forecast listening times based on features like episode length, popularity metrics, sentiment, and advertising data.
+
+Predicting listening time is important for broadcasters and advertisers to optimize content delivery, improve user engagement, and maximize ad effectiveness. By leveraging XGBoost with careful data preprocessing and hyperparameter tuning, this notebook aims to build a robust regression model that captures complex relationships in the data and achieves strong predictive performance.
+
+Overall, this project demonstrates practical machine learning techniques applied to real-world audio consumption behavior, providing valuable insights for the podcast industry.
+
+# Library Imports and Setup
+This block imports essential Python libraries for data analysis and visualization:
+
+numpy – for numerical operations
+pandas – for data manipulation
+matplotlib & seaborn – for data visualization
+warnings – to suppress unnecessary warnings
+os – for interacting with the operating system
+import numpy as np 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import warnings
+warnings.filterwarnings("ignore")
+
+import os
