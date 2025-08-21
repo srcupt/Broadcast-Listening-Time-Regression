@@ -26,12 +26,18 @@ pandas – for data manipulation
 matplotlib & seaborn – for data visualization
 warnings – to suppress unnecessary warnings
 os – for interacting with the operating system
-import numpy as np 
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-import warnings
-warnings.filterwarnings("ignore")
+# Data Loading and Initial Preprocessing
+This section loads the training, test, and sample submission CSV files from the Kaggle dataset. Then it removes the 'id' column from the training data as it's not useful for modeling.
 
-import os
+# Train Data Overview
+This command displays the contents of the train DataFrame, allowing us to inspect the loaded dataset. It helps verify the structure, column names, and sample values after loading and preprocessing.
+
+| Podcast_Name    | Episode_Title | Episode_Length_minutes | Genre       | Host_Popularity_percentage | Publication_Day | Publication_Time |
+|-----------------|---------------|-------------------------|-------------|----------------------------|-----------------|------------------|
+| Mystery Matters | Episode 98    | NaN                     | True Crime  | 74.81                      | Thursday        | Night            |
+| Joke Junction   | Episode 26    | 19.80                   | Comedy      | 66.95                      | Saturday        | Afternoon        |
+| Study Sessions  | Episode 16    | 73.90                   | Education   | 69.97                      | Tuesday         | Evening          |
+| Digital Digest  | Episode 45    | 67.17                   | Technology  | 57.22                      | Monday          | Morning          |
+| Mind & Body     | Episode 86    | 10.51                   | Health      | 80.07                      | Monday          | Afternoon        |
+
